@@ -1,3 +1,4 @@
+import CartWidget from "./CartWidget"
 import Nav from "./Nav"
 
 const NavBar = () =>{
@@ -7,6 +8,7 @@ const NavBar = () =>{
         <header id="headerApp">
             <h1>Ecommerce App</h1>
             <Nav/>
+            <CartWidget/>
         </header>
         </>
     )
@@ -14,4 +16,3 @@ const NavBar = () =>{
 
 //Exportar Header
 export default NavBar
-

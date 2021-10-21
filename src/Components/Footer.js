@@ -1,10 +1,7 @@
-import Header from "./NavBar"
-import Nav from "./Nav"
-
 const Footer = () => {
     return (
         <>
-        <Nav/>
+        <p id="footerStyle">Contact Information</p>
         </>
     )
 }
