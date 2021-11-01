@@ -1,0 +1,16 @@
+[
+    {
+        "id" : 0 ,
+        "title" : "Health Potion",
+        "description" : "Restores 20 HP",
+        "price" : 200,
+        "img" : "/2093002_1.png"
+    },
+    {
+        "id" : 1 ,
+        "title" : "Mana Potion",
+        "description" :"Restores 10 MP",
+        "price" : 300,
+        "img" : "/883864d591a5915a5543f571b8506c05.jpg"
+    }
+]

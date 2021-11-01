@@ -1,10 +1,12 @@
+//import { Link } from "react-router-dom"
+
 const Nav = () => {
     return (
         <div>
             <nav id="navId">
-            <a href="#">Categoría 1</a>
-            <a href="#">Categoría 2</a>
-            </nav>    
+            {/* <Link to="#">Categoría 1</Link> */}
+            {/* <Link to="#">Categoría 2</Link>*/}
+            </nav>
         </div>
     )
 }

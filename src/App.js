@@ -6,18 +6,25 @@ import Footer from "./Components/Footer"
 import ItemListContainer from "./Components/ItemListContainer"
 //Import ItemCount
 import ItemCount from "./Components/ItemCount"
+//BrowserRouter
+//import { BrowserRouter, Route } from "react-router-dom/cjs/react-router-dom.min"
 
 const App = () =>{
     return(
         //Esto es un fragmento
         <>
+        {/*BrowserRouter>  */}        
         <NavBar/>
         <ItemCount stock="10"/>
         <ItemListContainer greeting="Bienvenida/o a EcommerceApp."/>
         <Footer/>
+        {/* </BrowserRouter> */}
         </>
     )
 }
 
 //Exportar app
 export default App
+
+
+//route path=/categoria/:id

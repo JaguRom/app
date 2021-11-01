@@ -3,8 +3,6 @@ import { useState } from "react";
 
 //Variable contador
 const ItemCount= ({stock}) =>{
-
-
 const [ contador, setContador ] = useState(0);
     const sumaContador = () => setContador( contador +1 );
     const restaContador = () => setContador( contador -1 );
