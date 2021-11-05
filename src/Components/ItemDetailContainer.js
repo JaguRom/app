@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react"
 import itemsJson from "./items.json"
 import ItemDetail from "./ItemDetail"
+
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState([])
     useEffect(() => {

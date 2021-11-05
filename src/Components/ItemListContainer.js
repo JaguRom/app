@@ -1,13 +1,22 @@
 import { useEffect, useState } from "react"
 import itemsJson from "./items.json"
 import ItemList from "./ItemList"
+import { useParams } from "react-router-dom"
 
 const ItemListContainer  = (props) => {
 
+    const {id} = useParams()
     const [productos, setProductos] = useState([])
    const [loading,setLoading] = useState(true)
 
     useEffect(() => {
+        if(id){
+            setProductos(itemsJson.filter(item => item.id === id))
+            setLoading(false)
+        }else{
+            setProductos(itemsJson)
+            setLoading(false)
+        }
         return(
             promesa
             .then (()=>

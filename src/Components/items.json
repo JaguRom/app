@@ -12,5 +12,19 @@
         "description" :"Restores 10 MP",
         "price" : 300,
         "img" : "/883864d591a5915a5543f571b8506c05.jpg"
+    },
+    {
+        "id" : 2 ,
+        "title" : "Magic Scroll",
+        "description" : "Summons a rare artifact",
+        "price" : 400,
+        "img" : "/scroll.jpg"
+    },
+    {
+        "id" : 3 ,
+        "title" : "Spell Book",
+        "description" :"Contains ancient rare knowledge",
+        "price" : 1000,
+        "img" : "/spellBook.jpg"
     }
 ]

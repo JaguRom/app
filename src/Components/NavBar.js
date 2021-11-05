@@ -1,12 +1,16 @@
 import CartWidget from "./CartWidget"
 import Nav from "./Nav"
+import { NavLink } from "react-router-dom"
 
 const NavBar = () =>{
     return(
         //Esto es un fragment
         <>
         <header id="headerApp">
-            <h1>Ecommerce App</h1>
+            <NavLink to="/">
+                <h1>Ecommerce App</h1>
+            </NavLink>
+            
             <Nav/>
             <CartWidget/>
         </header>
