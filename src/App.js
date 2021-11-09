@@ -18,15 +18,13 @@ const App = () =>{
         <>
         <BrowserRouter>
         <NavBar/>
-        <ItemCount stock="10"/>
         <Switch>
-        <Route path="/" component={ItemListContainer} exact/>
-        <Route path="/categoria/:id"/>
+        <Route exact path="/" component={ItemListContainer}/>
+        <Route path="/itemDetail/:id" component={ItemDetailContainer}/>
+        <Route path="/category/:categoryId" component={ItemListContainer}/>
         </Switch>
-        <Route path="/item/:id">{<ItemDetailContainer/>}</Route> 
-        <ItemDetailContainer/>
         <Footer/>
-        </BrowserRouter>
+        </BrowserRouter> 
         </>
     )
 }

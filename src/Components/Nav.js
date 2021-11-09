@@ -4,9 +4,9 @@ const Nav = () => {
     return (
         <div>
             <nav id="navId">
-            <NavLink to="/categoria/1">categoria 1</NavLink>
+            <NavLink to="/category/potions">Potions</NavLink>
             {/* <Link to="#">Categoría 1</Link> */}
-            <NavLink to="/categoria/2">categoria 2</NavLink>
+            <NavLink to="/category/artifacts">Artifacts</NavLink>
             {/* <Link to="#">Categoría 2</Link>*/}
             </nav>
         </div>

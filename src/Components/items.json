@@ -4,27 +4,31 @@
         "title" : "Health Potion",
         "description" : "Restores 20 HP",
         "price" : 200,
-        "img" : "/2093002_1.png"
+        "img" : "/2093002_1.png",
+        "category" : "potions"
     },
     {
         "id" : 1 ,
         "title" : "Mana Potion",
         "description" :"Restores 10 MP",
         "price" : 300,
-        "img" : "/883864d591a5915a5543f571b8506c05.jpg"
+        "img" : "/883864d591a5915a5543f571b8506c05.jpg",
+        "category" : "potions"
     },
     {
         "id" : 2 ,
         "title" : "Magic Scroll",
         "description" : "Summons a rare artifact",
         "price" : 400,
-        "img" : "/scroll.jpg"
+        "img" : "/scroll.jpg",
+        "category": "artifacts"
     },
     {
         "id" : 3 ,
         "title" : "Spell Book",
         "description" :"Contains ancient rare knowledge",
         "price" : 1000,
-        "img" : "/spellBook.jpg"
+        "img" : "/spellBook.jpg",
+        "category" : "artifacts"
     }
 ]

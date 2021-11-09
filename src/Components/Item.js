@@ -1,10 +1,15 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min"
+
 const Item = ({ item }) => {
+    console.log(item)
+    console.log(item.id)
+    console.log(item.name)
     return (
         <div className="item">
                     <img src={item.img} alt="" width="200" height="200"/>
                     <p>{item.title}</p>
                     <p>${item.price}</p>
-                    <button>Detalle</button>
+                    <Link to={`/itemDetail/${item.id}`}><button>Detalle</button></Link>
         </div>
     )
 
