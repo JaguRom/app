@@ -10,13 +10,16 @@ import ItemCount from "./Components/ItemCount"
 import ItemDetailContainer from "./Components/ItemDetailContainer"
 //BrowserRouter
 import {BrowserRouter,Route, Switch} from "react-router-dom"
-//import { BrowserRouter, Route } from "react-router-dom/cjs/react-router-dom.min"
+//Import Context
+import CustomComponent from "./cartContext"
+
 
 const App = () =>{
     return(
         //Esto es un fragmento
         <>
         <BrowserRouter>
+        <CustomComponent>
         <NavBar/>
         <Switch>
         <Route exact path="/" component={ItemListContainer}/>
@@ -24,6 +27,7 @@ const App = () =>{
         <Route path="/category/:categoryId" component={ItemListContainer}/>
         </Switch>
         <Footer/>
+        </CustomComponent>
         </BrowserRouter> 
         </>
     )

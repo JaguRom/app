@@ -6,6 +6,11 @@ const ItemDetail = ({productos}) => {
     console.log(productos[0].description);   
     console.log(productos[0].title);
 
+    const onAdd = (cantidadSeleccionada)=> {
+        console.log('Enviado al carrito')
+        console.log(cantidadSeleccionada);
+    }
+
     return (
         <div className="item-detail" key={productos[0].id} id={productos[0].id}>
             <div className="item-detail__image">
@@ -14,7 +19,7 @@ const ItemDetail = ({productos}) => {
             <div className="item-detail__info">
                 <h2 className="item-detail__title">{productos[0].title}</h2>
                 <p className="item-detail__description">{productos[0].description}</p>
-                <ItemCount productos={productos}/>
+                <ItemCount stock={4} onAdd={onAdd}/>
             </div>
         </div>
     )

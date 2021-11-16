@@ -2,19 +2,20 @@
 import { useState } from "react";
 
 //Variable contador
-const ItemCount= ({stock}) =>{
+const ItemCount= ({onAdd}) =>{
 const [ contador, setContador ] = useState(0);
     const sumaContador = () => setContador( contador +1 );
     const restaContador = () => setContador( contador -1 );
     const reseteaContador = () => setContador(0);
 
-const onAdd= ()=>{
+/* const stockDisp= ()=>{
     if (contador>stock){
     console.log("No hay stock disponible")
     } else{
     console.log ("Su producto ha sido guardado en el carrito")
     }
-}
+
+} */
 
 return (
     <>
@@ -22,7 +23,7 @@ return (
     <button onClick={restaContador}>Restar</button>
     <button onClick={reseteaContador}>Reseteo</button>
     <p>{contador}</p>
-    <button onClick={onAdd}>Agregar al carrito</button>
+    <button onClick={() => onAdd(contador)}>Agregar al carrito</button>
     </>
 )
 }

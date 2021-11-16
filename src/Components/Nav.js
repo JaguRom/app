@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom"
+import { useContext } from "react";
+import { CartContext} from "../cartContext"
+
 
 const Nav = () => {
+    const resultado = useContext(CartContext);
+    console.log(resultado);
     return (
         <div>
             <nav id="navId">
