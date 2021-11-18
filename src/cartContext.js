@@ -5,10 +5,19 @@ const { Provider} = CartContext;
 
 const CustomComponent=({children})=>{
     const [cart,setCart]=useState([]);
+const addToCart=(product, cantidad)=>{
+    console.log("Productos comprados")
+    console.log(product, cantidad);
+}
+
+const valorDelContexto = {
+    cart:cart,
+    addToCart:addToCart,
+}
     return(
 
 
-        <Provider value={cart}>
+        <Provider value={valorDelContexto}>
         {children}
 
         </Provider>
