@@ -4,10 +4,10 @@ import { CartContext } from '../cartContext';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const ItemDetail = ({productos}) => {
-    console.log(productos);
+/*     console.log(productos);
     console.log(productos.length);  
     console.log(productos[0].description);   
-    console.log(productos[0].title);
+    console.log(productos[0].title); */
 
     const {push}= useHistory();
     const {addToCart} = useContext(CartContext);
@@ -15,6 +15,7 @@ const ItemDetail = ({productos}) => {
     const onAdd = (cantidadSeleccionada)=> {
         console.log('Enviado al carrito')
         console.log(cantidadSeleccionada);
+        /* Push agrega cantidad y product al carrito del contexto antes de redireccionar */
         push("/cart")
         addToCart(productos[0], cantidadSeleccionada);
     }

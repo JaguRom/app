@@ -21,7 +21,7 @@ return <p>Cargando...</p>;
 }
 else {
   return (
-    console.log(productos),
+    /* console.log(productos) */
     <div>
       <ItemDetail productos={productos} />
     </div>

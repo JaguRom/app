@@ -5,7 +5,7 @@ import { CartContext} from "../cartContext"
 
 const Nav = () => {
     const {cart} = useContext(CartContext);
-    console.log(CartContext);
+    /* console.log(CartContext); */
     return (
         <div>
             <nav id="navId">
