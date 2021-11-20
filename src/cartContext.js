@@ -5,6 +5,8 @@ export const { Provider} = CartContext;
 
 export const CustomComponent=({children})=>{
     const [cart,setCart]=useState([]);
+    console.log("Productos en el carrito")
+    console.log(cart);
 
 /*     const agregarProducto = (product, cantidad) => {
         console.log("Agregar producto")
@@ -15,10 +17,9 @@ export const CustomComponent=({children})=>{
     const vaciar = () => {}
 
 const addToCart=(product, cantidad)=>{
-/*     console.log("Productos comprados")
-    console.log(product, cantidad); */
+    console.log("Productos comprados")
+    console.log(product, cantidad)
     setCart([...cart,{cantidad,product}])
-    console.log(cart)
 }
    
  
