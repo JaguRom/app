@@ -8,26 +8,43 @@ export const CustomComponent=({children})=>{
     console.log("Productos en el carrito")
     console.log(cart);
 
-/*     const agregarProducto = (product, cantidad) => {
-        console.log("Agregar producto")
-        console.log(cantidad,product)
-        setCart([...cart,{cantidad,product}])
-    } */
-    const borrarProducto = (product) => {} 
-    const vaciar = () => {}
-
+/* Agregar Productos */
 const addToCart=(product, cantidad)=>{
     console.log("Productos comprados")
     console.log(product, cantidad)
     setCart([...cart,{cantidad,product}])
 }
-   
- 
+/* Remover Productos */
+const removeFromCart=(ItemId)=>{
+    setCart([...cart.filter(product => product.id !== ItemId)]);
+console.log("Productos eliminados")
+
+    console.log(removeFromCart)
+}
+
+//Chequear si el producto existe [CORREGIR]
+const isInCart = (product) =>{
+const existe = cart.filter(item => item.Producto.id === product.id)
+return existe;
+}
+
+
+/* Vaciar carrito */
+    const clear=()=>{
+        setCart([])
+        console.log("Carrito vaciado")
+        console.log(clear)
+    }
+
+
+
+
 const valorDelContexto = {
     cart:cart,
     addToCart:addToCart,
-    borrarProducto:borrarProducto,
-    vaciar:vaciar,
+    removeFromCart:removeFromCart,
+    clear:clear,
+    isInCart:isInCart
 
 }
     return(
