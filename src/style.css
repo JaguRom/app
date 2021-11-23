@@ -17,3 +17,7 @@ background-color: lightblue;
 color: brown;
 background-color: blanchedalmond;
 }
+
+.count-none{
+    display: none;
+}

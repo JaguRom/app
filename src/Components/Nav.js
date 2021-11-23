@@ -5,6 +5,8 @@ import { CartContext} from "../cartContext"
 
 const Nav = () => {
     const {cart} = useContext(CartContext);
+    console.log("Acá va el cart lenght");
+    console.log(cart.length);
     /* console.log(CartContext); */
     return (
         <div>

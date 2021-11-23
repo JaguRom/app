@@ -12,7 +12,7 @@ const NavBar = () =>{
             </NavLink>
             
             <Nav/>
-            <CartWidget/>
+            <CartWidget />
         </header>
         </>
     )
