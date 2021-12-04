@@ -12,3 +12,12 @@ const firebaseConfig = {
     appId: "1:630657248949:web:9aac0b35a20bf54c2398fc"
   };
   /* console.log(Esto es firebase) */
+
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+
+  export const firestore = firebase.firestore(app);
+
+  export default firebase;
+
+  console.log (firestore);

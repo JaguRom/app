@@ -5,7 +5,7 @@ import { useHistory } from "react-router"
 
 
 const Cart = () => {
-    const { cart, removeFromCart, clear } = useContext(CartContext);
+    const { cart, removeFromCart,} = useContext(CartContext);
     const {push} = useHistory()
     const [toClick,setToClick] = useState(false)
     const finalizarCompra = () => {

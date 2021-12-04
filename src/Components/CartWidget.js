@@ -3,11 +3,13 @@ import { CartContext} from "../cartContext"
 
 const CartWidget = () => {
     const {cart} = useContext(CartContext);
-    const productosTotales= () => {
-        productosTotales= cart.reduce((total,producto) => {
+    const {totalItems}=useContext(CartContext);
+    console.log("Estoestotalitems",totalItems)
+/*     const productosTotales= () => {
+        productosTotales = cart.reduce((total,producto) => {
             return total + producto.cantidad
         },0)
-    }
+    } */
     return (
         <>
         <span className="material-icons">shopping_cart</span>
